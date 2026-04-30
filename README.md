@@ -13,7 +13,9 @@ Landing page responsive para gimnasio con diseño moderno y adaptable a móviles
 - Navegación simple
 
 ## Capturas
-(Aquí agregas imágenes del proyecto)
+![Home](assets/screenshots/home.png)
 
 ## Aprendizaje
 Este proyecto me ayudó a reforzar diseño responsive y estructura HTML semántica.
+
+
