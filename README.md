@@ -8,9 +8,11 @@ Landing page responsive para gimnasio con diseño moderno y adaptable a móviles
 - JAVASCRIPT
 
 ## Características
-- Diseño responsive
+- Diseño responsive utilizando HTML, CSS y JavaScript 
+- Contiene animaciones al desplazarse
+- Incluye un formulario para calcular el índice de masa corporal.
+- Desarrollado primero con la metodología Mobile First, luego para PC's de escritorio.
 - Secciones informativas (planes, servicios)
-- Navegación simple
 
 ### Vista Escritorio
 ![Home](assets/screenshots/01-Escritorio.png)
