@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <!-- REMIXICON -->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>NullGym</title>
+    </head>
+    <!-- NOTAS / Correcciones:
+    > Utilizar librería de iconos "Remix Icon" en lugar de imagenes locales
+    > Agregar idioma INGLES Separando el contenido del idioma (welcome_text → “Bienvenido” / “Welcome”)
+    > Hacer mas grande el "area de seleccion" para los botones del HEADER
+    > quitar <br> que se agrego provicionalmente
+    > Agregar fondo oscuro a HEADER desde un inicio
+    > Cambiar logo generico
+    > Corregir diseñó de "planes" por que se rompe si se agregan mas
+    > Investigar que la calculadora si funcione bien
+    -->
+    <body>
+    <!-- ____________________________ HEADRER ____________________________ -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo-nav.png" alt="logo"> NullGym
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#program" class="nav__link">Programas</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#choose" class="nav__link">Beneficios</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#pricing" class="nav__link">Precios</a>
+                        </li>
+                    </ul>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <!-- Boton de interruptor -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div> 
+            </nav>
+        </header>
+
+        <main class="main">
+        <!-- ______________________________ HOME _____________________________ -->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h2 class="home__subtitle">MOLDEA TU</h2>
+                        <h1 class="home__title">FIGURA</h1>
+                        <p class="home__description">
+                            Aqui te ayudaremos a moldear <br>y conseguir tu cuerpo ideal 
+                        </p>
+                        <a href="#" class="button button__flex">
+                            Registrarse ahora <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                    <div class="home__images">
+                        <img src="assets/img/home-img.png" alt="home image" class="home__img">
+                        <div class="home__triangle home__triangle-3"></div>
+                        <div class="home__triangle home__triangle-2"></div>
+                        <div class="home__triangle home__triangle-1"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Agregar logos  -->
+            <!-- <section class="logos section"> -->
+                <!-- <div class="logos__container container grid"> -->
+                <!-- </div> -->
+            <!-- </section> -->
+            <!-- ____________________________ PROGRAM ____________________________ -->
+            <section class="program section" id="program">
+                <div class="container">
+                    <div class="section__data">
+                        <h2 class="section__subtitle">Nuestros programas</h2>
+                        <div class="section__titles">
+                            <h1 class="section__title-border">CONSIGUE TU</h1>
+                            <h1 class="section__title">MEJOR FIGURA</h1>
+                        </div>
+                    </div>
+                    <div class="program__container grid">
+                        <article class="program__card">
+                            <div class="program__shape">
+                                <img src="assets/img/program1.png" alt="program image" class="program__img">
+                            </div>
+                            <h3 class="program__title">Flexibilidad en músculo</h3>
+                            <p class="program__description"> Generar una tensión que provoque una contracción de las fibras musculares.</p>
+                            <a href="#" class="program__button"><i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+                        <article class="program__card">
+                            <div class="program__shape">
+                                <img src="assets/img/program2.png" alt="program image" class="program__img">
+                            </div>
+                            <h3 class="program__title">Ejercicio cardiovascular</h3>
+                            <p class="program__description">Aumenta tu frecuencia cardíaca y la mantiene elevada durante un periodo prolongado.</p>
+                            <a href="#" class="program__button"><i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+                        <article class="program__card">
+                            <div class="program__shape">
+                                <img src="assets/img/program3.png" alt="program image" class="program__img">
+                            </div>
+                            <h3 class="program__title">Yoga Básico</h3>
+                            <p class="program__description">
+                                Adentrate a mundo del yoga con la técnica de respiración más común que encontrarás en el yoga.
+                            </p>
+                            <a href="#" class="program__button"><i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+                        <article class="program__card">
+                            <div class="program__shape">
+                                <img src="assets/img/program4.png" alt="program image" class="program__img">
+                            </div>
+                            <h3 class="program__title">levantamiento de pesas</h3>
+                            <p class="program__description">
+                                Intenta un levantamiento único con peso máximo de una barra cargada con discos de pesas.
+                            </p>
+                            <a href="#" class="program__button"><i class="ri-arrow-right-line"></i></a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- __________________________ BENEFICIOS ___________________________ -->
+            <section class="choose section" id="choose">
+                <div class="choose__overflow">
+                    <div class="choose__container container grid">
+                        <div class="choose__content">
+                            <div class="section__data">
+                                <div class="section__titles">
+                                    <h1 class="section__title">¿POR QUÉ DEBERÍAS ENTRENAR CON NOSOTROS?</h1>
+                                </div>
+                            </div>
+                            <p class="choose__description">
+                                Elige tu clase favorita y comienza ahora.
+                            </p>
+                            <div class="choose__data">
+                                <div class="choose__group">
+                                    <h3 class="choose__number">200+</h3>
+                                    <p class="choose__subtitle">Mienbros</p>
+                                </div>
+
+                                <div class="choose__group">
+                                    <h3 class="choose__number">50+</h3>
+                                    <p class="choose__subtitle">Entrenadores</p>
+                                </div>
+
+                                <div class="choose__group">
+                                    <h3 class="choose__number">25+</h3>
+                                    <p class="choose__subtitle">Programas</p>
+                                </div>
+
+                                <div class="choose__group">
+                                    <h3 class="choose__number">100+</h3>
+                                    <p class="choose__subtitle">Reconocimientos</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Divisor de imagenes(es necesario para que se vea bien) -->
+                        <div class="choose__images">
+                            <img src="assets/img/choose-img.png" alt="choose image" class="choose__img">
+                            <div class="choose__triangle choose__triangle-1"></div>
+                            <div class="choose__triangle choose__triangle-2"></div>
+                            <div class="choose__triangle choose__triangle-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ____________________________ PRECIOS ____________________________ -->
+            <section class="pricing section" id="pricing">
+                <div class="container">
+                    <div class="section__data">
+                        <h2 class="section__subtitle">Precios</h2>
+                        <div class="section__titles">
+                            <div class="section__title-border">NUESTROS PLANES ESPECIALES</div>
+                        </div>
+                    </div>
+                    <div class="pricing__container grid">
+                        <article class="pricing__card">
+                            <header class="pricing__header">
+                                <div class="pricing__shape">
+                                    <img src="assets/img/pricing1.png" alt="pricing image" class="pricing__img">
+                                </div>
+                                <h1 class="pricing__title">PAQUETE BÁSICO</h1>
+                                <h2 class="pricing__number">$250 MXN</h2>
+                            </header>
+                            <!-- Agregar mas beneficios puede romper lar estructura/diseño -->
+                            <ul class="pricing__list">
+                                <li class="pricing__item">
+                                    <i class="ri-checkbox-circle-line"></i> 5 días en una semana
+                                </li>
+
+                                <li class="pricing__item">
+                                    <i class="ri-checkbox-circle-line"></i> 1 sudadera
+                                </li>
+
+                                <li class="pricing__item pricing__item-opacity">
+                                    <i class="ri-checkbox-circle-line"></i> 1 bote de proteína
+                                </li>
+
+                                <li class="pricing__item pricing__item-opacity">
+                                    <i class="ri-checkbox-circle-line"></i> Acceso a vídeos exclusivos
+                                </li>
+
+                                <li class="pricing__item pricing__item-opacity">
+                                    <i class="ri-checkbox-circle-line"></i> Estiramiento muscular
+                                </li>
+                            </ul>
+                            <a href="#" class="button button__flex pricing__button">Comprar <i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+                        <article class="pricing__card pricing__card-active">
+                            <header class="pricing__header">
+                                <div class="pricing__shape">
+                                    <img src="assets/img/pricing2.png" alt="pricing image" class="pricing__img">
+                                </div>
+                                <h1 class="pricing__title">PAQUETE PREMIUM</h1>
+                                <h2 class="pricing__number">$320 MXN</h2>
+                            </header>
+                            <ul class="pricing__list">
+                                <li class="pricing__item">
+                                    <i class="ri-checkbox-circle-line"></i> 5 días en una semana
+                                </li>
+
+                                <li class="pricing__item">
+                                    <i class="ri-checkbox-circle-line"></i> 1 sudadera
+                                </li>
+
+                                <li class="pricing__item">
+                                    <i class="ri-checkbox-circle-line"></i> 1 bote de proteína
+                                </li>
+
+                                <li class="pricing__item pricing__item-opacity">
+                                    <i class="ri-checkbox-circle-line"></i> Acceso a vídeos exclusivos
+                                </li>
+
+                                <li class="pricing__item pricing__item-opacity">
+                                    <i class="ri-checkbox-circle-line"></i> Estiramiento muscular
+                                </li>
+                            </ul>
+                            <a href="#" class="button button__flex pricing__button">Comprar <i class="ri-arrow-right-line"></i></a>
+                        </article>
+
+                        <article class="pricing__card">
+                            <header class="pricing__header">
+                                <div class="pricing__shape">
+                                    <img src="assets/img/pricing3.png" alt="pricing image" class="pricing__img">
+                                </div>
+                                <h1 class="pricing__title">PAQUETE DIAMANTE</h1>
+                                <h2 class="pricing__number">$400 MXN</h2>
+                            </header>
+                            <ul class="pricing__list">
+                                <li class="pricing__item">
+                                    <i class="ri-checkbox-circle-line"></i> 5 días en una semana
+                                </li>
+
+                                <li class="pricing__item">
+                                    <i class="ri-checkbox-circle-line"></i> 1 sudadera
+                                </li>
+
+                                <li class="pricing__item">
+                                    <i class="ri-checkbox-circle-line"></i> 1 bote de proteína
+                                </li>
+
+                                <li class="pricing__item">
+                                    <i class="ri-checkbox-circle-line"></i> Acceso a vídeos exclusivos
+                                </li>
+
+                                <li class="pricing__item">
+                                    <i class="ri-checkbox-circle-line"></i> Estiramiento muscular
+                                </li>
+                            </ul>
+                            <a href="#" class="button button__flex pricing__button">
+                                Comprar <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- __________________________ CALCULADORA __________________________ -->
+            <section class="calculate section">
+                <div class="calculate__container container grid">
+                    <div class="calculate__content">
+                        <div class="section__titles">
+                            <h1 class="section__title">Calcula tu IMC</h1>
+                        </div>
+                        <p class="calculate__description">
+                            El IMC (Índice de Masa Corporal) es una medida que relaciona el peso y la altura de una persona
+                        </p>
+                        <form action="" class="calculate__form" id="calculate-form">
+                            <div class="calculate__box">
+                                <input type="number" placeholder="Altura" class="calculate__input" id="calculate-cm">
+                                <label for="" class="calculate__label">cm</label>
+                            </div>
+
+                            <div class="calculate__box">
+                                <input type="number" placeholder="Peso" class="calculate__input" id="calculate-kg">
+                                <label for="" class="calculate__label">kg</label>
+                            </div>
+                            <button type="submit" class="button button__flex">
+                                Calcular <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </form>
+                        <p class="calculate__message" id="calculate-message"></p>
+                    </div>
+                    <img src="assets/img/calculate-img.png" alt="calculate image" class="calculate__img">
+                </div>
+            </section>
+        </main>
+        <!-- ____________________________ FOOTER ____________________________ -->
+        <!-- Esto esta de mas -->
+        <footer class="footer section" id="footer">
+            <div class="footer__container container grid">
+                <div>
+                    <p class="footer__message" id="contact-message"></p>
+                </div>
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">
+                            SERVICIOS
+                        </h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Flexibilidad en músculo</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Ejercicio cardiovascular</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Yoga Básico</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">levantamiento de pesas</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            PRECIOS
+                        </h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Basico</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Premium</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Diamante</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            EMPRESA
+                        </h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Acerca de nosotros</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Trayectoria</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Clientes</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer__group">
+                    <ul class="footer__social">
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Efecto de Scrolling -->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!-- JS -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
