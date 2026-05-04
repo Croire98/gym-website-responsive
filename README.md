@@ -13,7 +13,7 @@ Landing page responsive para gimnasio con diseño moderno y completamente adapta
 |-------|--------|-------------|
 | ![Mobile](assets/screenshots/03-Celular.png) | ![Mobile](assets/screenshots/02-Tablet.png) | ![Home](assets/screenshots/01-Escritorio.png) |
 
-## Características
+## Características y Funcionalidades principales
 - Diseño responsive (Mobile First) utilizando HTML, CSS y JavaScript
 - HTML semántico y accesible
 - CSS moderno (Flexbox, Grid, Media Queries)
